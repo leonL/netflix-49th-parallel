@@ -1,0 +1,83 @@
+.juxtaposed-flix {
+  margin: auto;
+  width: 90%;
+}
+
+.axis path {
+  fill: none;
+  stroke: black;
+  shape-rendering: crispEdges;
+}
+
+.axis text {
+    font-family: sans-serif;
+    font-size: 10px;
+}
+
+rect {
+  shape-rendering: crispEdges;
+}
+
+.cdn rect {
+  fill: red;
+  stroke: red;
+}
+
+.usa rect {
+  fill: blue;
+  stroke: blue;
+}
+
+.shared rect {
+  opacity: 0.5;
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (max-width : 768px) {
+/* Styles */
+}
+
+/* iPhone 6 (landscape) ----------- */
+@media only screen and (max-width : 736px) {
+/* Styles */
+}
+
+/* iPhone 6+ (landscape) ----------- */
+@media only screen and (max-width : 667px) {
+/* Styles */
+}
+
+/* Samsung Galaxy 3 (landscape) ----------- */
+@media only screen and (max-width : 640px) {
+/* Styles */
+}
+
+/*iPhone 5 (landscape) */
+@media only screen and (max-width : 568px) {
+/* Styles */
+}
+
+/* iPhone 3 & 4 (landscape) ----------- */
+@media only screen and (max-width : 480px) {
+/* Styles */
+}
+
+/* iPhone 6+ (portrait) ----------- */
+@media only screen and (max-width : 414px) {
+/* Styles */
+}
+
+/* iPhone 6 (portrait) ----------- */
+@media only screen and (max-width : 375px) {
+/* Styles */
+}
+
+/* Samsung Galaxy S5 (portrait) ----------- */
+@media only screen and (max-width : 360px) {
+/* Styles */
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 320px) {
+/* Styles */
+}
