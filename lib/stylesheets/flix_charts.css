@@ -3,15 +3,69 @@
   width: 90%;
 }
 
+.headline {
+  font-size: 25px;
+  font-weight: normal;
+  line-height: 1.2;
+  color: #000;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.subheadline {
+  font-size: 14px;
+  color: #666;
+  margin-top: 4px;
+  font-weight: normal;
+  line-height: 1.35;
+}
+
+.article-body {
+  font-size: 14px;
+}
+
+.chart-title {
+  font-family: sans-serif;
+}
+
+h1.chart-title {
+  letter-spacing: 1px;
+  font-size: 1.2em;
+  margin-top: 20px;
+}
+
+h2.chart-title {
+  margin: 5px 0 20px;
+  font-size: 18px;
+  color: dimgrey;
+  font-weight: normal;
+}
+
+svg {
+  padding: 20px 0;
+  border-top: dotted 1px black;
+}
+
 .axis path {
   fill: none;
   stroke: black;
+  stroke-dasharray: 1, 1;
   shape-rendering: crispEdges;
 }
 
 .axis text {
     font-family: sans-serif;
     font-size: 10px;
+}
+
+.y.axis text {
+  text-align: right;
+  font-family: "Century Gothic",CenturyGothic,AppleGothic,sans-serif;
+  font-weight: bold;
+  color: dimgrey;
+  font-size: 14px;
+  margin-right: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 rect {

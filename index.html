@@ -14,13 +14,24 @@
   </head>
   <body>
     <div class='juxtaposed-flix'>
-        <div class='totals'></div>
+        <h1 class='headline'>Netflix's 49th Parallel</h1>
+        <h2 class="subheadline">It's not just about new releases, the U.S. site also has a deeper back catalogue than the Canadian version.</h2>
+        <p class="article-body">Feeling left out and ignored by Netflix Canada?</p>
+        <p class="article-body">Canadian Netflix subscribers can only view half of the movie and television titles available to Americans on the online streaming service.</p>
+
+        <p class="article-body">Previously unpublished data provided to the Toronto Star confirms the widely held suspicion that there is far more variety for Netflix viewers in the U.S. than in Canada.</p>
+        <div class='totals'>
+            <h1 class='chart-title'>Older films account for about half of disparity in U.S. catalogue size</h1>
+            <h2 class='chart-title'>Number of titles available on Netflix as of Jan. 2015</h2>
+        </div>
         <div class='back-catalogue'></div>
         <div class='recent'></div>
     </div>
     <script type="text/javascript">
         $(function() {
             FLIX.byYear.renderTotalsChart($('.juxtaposed-flix .totals'));
+            FLIX.byYear.renderBackCatChart($('.juxtaposed-flix .back-catalogue'));
+            FLIX.byYear.renderRecentChart($('.juxtaposed-flix .recent'));
         });
     </script>
   </body>
