@@ -41,8 +41,19 @@ h2.chart-title {
 }
 
 svg {
-  padding: 20px 0;
   border-top: dotted 1px black;
+}
+
+line.border-line {
+  stroke: black;
+  stroke-dasharray: 1, 1;
+  shape-rendering: crispEdges;
+}
+
+line.grid-line {
+  stroke: black;
+  stroke-dasharray: 1, 1;
+  shape-rendering: crispEdges;
 }
 
 .axis path {
@@ -58,13 +69,20 @@ svg {
 }
 
 .y.axis text {
-  text-align: right;
   font-family: "Century Gothic",CenturyGothic,AppleGothic,sans-serif;
   font-weight: bold;
   color: dimgrey;
+  font-size: 12px;
+  margin-right: 10px;
+  letter-spacing: 1px;
+}
+
+text.swatch.label {
+  font-family: "Century Gothic",CenturyGothic,AppleGothic,sans-serif;
+  font-weight: bold;
+  fill: dimgrey;
   font-size: 14px;
   margin-right: 10px;
-  text-transform: uppercase;
   letter-spacing: 1px;
 }
 
@@ -73,17 +91,31 @@ rect {
 }
 
 .cdn rect {
-  fill: red;
-  stroke: red;
+  fill: #3498db;
+  stroke: #3498db;
 }
 
 .usa rect {
-  fill: blue;
-  stroke: blue;
+  fill: #95a5a6;
+  stroke: #95a5a6;
 }
 
 .shared rect {
-  opacity: 0.5;
+  opacity: 0.4;
+}
+
+circle.cdn.swatch {
+  fill: #3498db;
+  stroke: #3498db;
+}
+
+circle.usa.swatch {
+  fill: #95a5a6;
+  stroke: #95a5a6;
+}
+
+.shared circle {
+  opacity: 0.4;
 }
 
 /* iPads (portrait) ----------- */
