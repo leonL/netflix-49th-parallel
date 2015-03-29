@@ -29,10 +29,28 @@
         <div class='recent'></div>
     </div>
     <script type="text/javascript">
+        function renderCharts($parent) {
+            $parent.find('svg').remove();
+            FLIX.byYear.renderTotalsChart($parent.find('.totals'));
+            FLIX.byYear.renderBackCatChart($parent.find('.back-catalogue'));
+            FLIX.byYear.renderRecentChart($parent.find('.recent'));
+        }
+
         $(function() {
-            FLIX.byYear.renderTotalsChart($('.juxtaposed-flix .totals'));
-            FLIX.byYear.renderBackCatChart($('.juxtaposed-flix .back-catalogue'));
-            FLIX.byYear.renderRecentChart($('.juxtaposed-flix .recent'));
+            var
+            $parent = $('.juxtaposed-flix'),
+            oldWidth = $parent.width()
+            ;
+
+            renderCharts($parent);
+
+            $(window).resize(function(e) {
+                var newWidth = $parent.width();
+                if (Math.abs(newWidth - oldWidth) > 50) {
+                    oldWidth = newWidth;
+                    renderCharts($parent);
+                }
+            });
         });
     </script>
   </body>

@@ -1,6 +1,7 @@
 .juxtaposed-flix {
   margin: auto;
   width: 90%;
+  max-width: 550px;
 }
 
 .headline {
@@ -81,7 +82,7 @@ text.swatch.label {
   font-family: "Century Gothic",CenturyGothic,AppleGothic,sans-serif;
   font-weight: bold;
   fill: dimgrey;
-  font-size: 14px;
+  font-size: 10px;
   margin-right: 10px;
   letter-spacing: 1px;
 }
@@ -118,24 +119,19 @@ circle.usa.swatch {
   opacity: 0.4;
 }
 
-/* iPads (portrait) ----------- */
-@media only screen and (max-width : 768px) {
-/* Styles */
+text.xVal {
+  stroke: none;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 11px;
 }
 
-/* iPhone 6 (landscape) ----------- */
-@media only screen and (max-width : 736px) {
-/* Styles */
+.cdn text.xVal {
+  fill: #00000F;
 }
 
-/* iPhone 6+ (landscape) ----------- */
-@media only screen and (max-width : 667px) {
-/* Styles */
-}
-
-/* Samsung Galaxy 3 (landscape) ----------- */
-@media only screen and (max-width : 640px) {
-/* Styles */
+.usa text.xVal {
+  fill: #000C0D;
 }
 
 /*iPhone 5 (landscape) */
