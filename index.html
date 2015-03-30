@@ -46,10 +46,11 @@
     </div>
     <script type="text/javascript">
         function renderCharts($parent) {
-            $parent.find('svg').remove();
+            var $oldSVGs = $parent.find('svg');
             FLIX.byYear.renderTotalsChart($parent.find('.totals'));
             FLIX.byYear.renderBackCatChart($parent.find('.back-catalogue'));
             FLIX.byYear.renderRecentChart($parent.find('.recent'));
+            $oldSVGs.remove();
         }
 
         $(function() {
