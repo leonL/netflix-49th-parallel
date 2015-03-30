@@ -101,13 +101,13 @@ rect {
 }
 
 .cdn rect {
-  fill: #3498db;
-  stroke: #3498db;
+  fill: #C40C0C;
+  stroke: #C40C0C;
 }
 
 .usa rect {
-  fill: #95a5a6;
-  stroke: #95a5a6;
+  fill: #0052A5;
+  stroke: #0052A5;
 }
 
 .shared rect {
@@ -115,32 +115,55 @@ rect {
 }
 
 circle.cdn.swatch {
-  fill: #3498db;
-  stroke: #3498db;
+  fill: #C40C0C;
+  stroke: #C40C0C;
 }
 
 circle.usa.swatch {
-  fill: #95a5a6;
-  stroke: #95a5a6;
+  fill: #0052A5;
+  stroke: #0052A5;
 }
 
 .shared circle {
   opacity: 0.7;
 }
 
-text.xVal {
+.xVals .percentages {
+  display: none;
+}
+
+.xVals tspan {
   stroke: none;
   font-family: sans-serif;
   font-weight: bold;
   font-size: 11px;
+  fill: black;
 }
 
-.cdn text.xVal {
-  fill: #00000F;
+.cdn .xVals tspan {
+  fill: #910000;
 }
 
-.usa text.xVal {
-  fill: #000C0D;
+.cdn .xVals tspan.exclusive {
+  fill: #C40C0C;
+}
+
+.cdn .xVals tspan.shared {
+  fill: #C40C0C;
+  opacity: 0.7;
+}
+
+.usa .xVals tspan {
+  fill: #001F72;
+}
+
+.usa .xVals tspan.exclusive {
+  fill: #0052A5;
+}
+
+.usa .xVals tspan.shared {
+  fill: #0052A5;
+  opacity: 0.7;
 }
 
 /*iPhone 5 (landscape) */
