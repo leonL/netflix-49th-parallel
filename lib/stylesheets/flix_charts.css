@@ -4,6 +4,10 @@
   max-width: 600px;
 }
 
+.juxtaposed-flix div.chart-frame {
+  position: relative;
+}
+
 .headline {
   font-size: 25px;
   font-weight: normal;
@@ -96,6 +100,27 @@ text.swatch.label {
   letter-spacing: 1px;
 }
 
+.xAxisToggles {
+  font-family: sans-serif;
+  font-size: 11px;
+  position: absolute;
+  top: 94px;
+}
+
+.totals.chart-frame .xAxisToggles {
+  left: 95px;
+}
+
+.back-catalogue.chart-frame .xAxisToggles {
+  left: 33px;
+}
+
+.recent.chart-frame .xAxisToggles {
+  left: 43px;
+  top: 102px;
+}
+
+
 rect {
   shape-rendering: crispEdges;
 }
@@ -129,6 +154,10 @@ circle.usa.swatch {
 }
 
 .xVals .percentages {
+  display: none;
+}
+
+.xVals .sub-totals {
   display: none;
 }
 
@@ -166,32 +195,26 @@ circle.usa.swatch {
   opacity: 0.7;
 }
 
-/*iPhone 5 (landscape) */
-@media only screen and (max-width : 568px) {
-/* Styles */
+@media only screen and (max-width : 545px) {
+  .recent.chart-frame .xAxisToggles {
+    top: 115px;
+  }
 }
 
-/* iPhone 3 & 4 (landscape) ----------- */
-@media only screen and (max-width : 480px) {
-/* Styles */
+@media only screen and (max-width : 532px) {
+  .back-catalogue.chart-frame .xAxisToggles {
+    top: 115px;
+  }
 }
 
-/* iPhone 6+ (portrait) ----------- */
-@media only screen and (max-width : 414px) {
-/* Styles */
+@media only screen and (max-width : 516px) {
+  .totals.chart-frame .xAxisToggles {
+    top: 115px;
+  }
 }
 
-/* iPhone 6 (portrait) ----------- */
-@media only screen and (max-width : 375px) {
-/* Styles */
-}
-
-/* Samsung Galaxy S5 (portrait) ----------- */
-@media only screen and (max-width : 360px) {
-/* Styles */
-}
-
-/* Smartphones (portrait) ----------- */
-@media only screen and (max-width : 320px) {
-/* Styles */
+@media only screen and (max-width : 349px) {
+  .totals.chart-frame .xAxisToggles {
+    top: 132px;
+  }
 }
