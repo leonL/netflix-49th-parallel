@@ -4,8 +4,7 @@
     <meta charset="utf-8">
     <title>Nextflix' 49th Parallel</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="lib/javascripts/d3/d3.v3.js" charset="utf-8"></script>
-    <!-- script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script -->
+    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.2/underscore-min.js" charset="utf-8"></script>
     <script src="lib/javascripts/util.js" charset="utf-8"></script>
     <script src="lib/javascripts/stacked_row_chart.js" charset="utf-8"></script>
@@ -17,16 +16,35 @@
     <div class='juxtaposed-flix'>
         <h1 class='headline'>Netflix' 49th Parallel</h1>
         <h2 class="subheadline">In addition to more new releases, the U.S. site also has a deeper back catalogue than the Canadian version.</h2>
-        <p class="article-body">Feeling left out and ignored by Netflix Canada?</p>
-        <p class="article-body">Canadian Netflix subscribers can only view half of the movie and television titles available to Americans on the online streaming service.</p>
 
-        <p class="article-body">Previously unpublished data provided to the Toronto Star confirms the widely held suspicion that there is far more variety for Netflix viewers in the U.S. than in Canada.</p>
+        <p class="article-body">As might be expected, Netflix in the U.S. has significantly <a href="http://www.thestar.com/entertainment/2015/01/22/the-list-netflix-doesnt-want-you-to-see-how-canada-really-stacks-up-to-us-version.html#">more recent films (if not necessarily better ones)</a> than in Canada.</p>
+
+        <p class="article-body">But how do their back catalogues compare?</p>
+
+        <p class="article-body">It turns out the U.S. has more past titles by almost the same magnitude, and that's assuming a generous definition of "recent film" as one that was released this century.</p>
+
         <div class='totals'>
-            <h1 class='chart-title'>The difference in the number of older films makes up almost half the catalogue disparity</h1>
+            <h1 class='chart-title'>Half the disparity is for films released prior to 2000</h1>
             <h2 class='chart-title'>Titles available on Netflix as of Jan. 2015</h2>
         </div>
-        <div class='back-catalogue'></div>
-        <div class='recent'></div>
+
+        <p class="article-body">The American back catalogue is not only more diverse, but also reaches further back in time, including one hundred plus titles from "The Golden Age of Hollywood", as well as a handful of foreign films that predate its rise, such as the silent <span class="film-title">Fantômas</span> serials (1913).</p>
+
+        <p class="article-body">The contrast is stark: the Canadian Netflix catalogue more or less drops off prioir to the 1980s, releases from previous decades accounting for less than one hundred available titles. Albeit, some older gems are exclusive to Netflix Canada, like <span class="film-title">The Third Man</span> (1949) and <span class="film-title">The Great Escape</span> (1963).</p>
+
+        <div class='back-catalogue'>
+            <h1 class='chart-title'>Canada's 1980's cliffhanger</h1>
+            <h2 class='chart-title'>Netflix' back catalogues broken down by decade</h2>
+        </div>
+
+        <p class="article-body">The number of available recent films breaks down in a compartively even way between the two countries. Though Canada's catalogue is, once again, about half the size, it's distribution closely mirros that of the bigger American one. Both bulk up on films made within the last two to three years, after which they taper off at a more or less common rate.</p>
+
+        <p class="article-body">If Netflix is still around one hundred years from now – ha! – will it include any movies from 2015? And will Canadian's still be finding ways to trick the site to get access to the American catalogue? The mysteries of 3015...</p>
+
+        <div class='recent'>
+            <h1 class='chart-title'>The relative sizes track over recent years</h1>
+            <h2 class='chart-title'>Netflix' recent-film catalogues broken down by year</h2>
+        </div>
     </div>
     <script type="text/javascript">
         function renderCharts($parent) {

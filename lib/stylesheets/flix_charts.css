@@ -24,6 +24,10 @@
   font-size: 14px;
 }
 
+.film-title {
+  font-style: italic;
+}
+
 .chart-title {
   font-family: sans-serif;
 }
